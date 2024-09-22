@@ -1,0 +1,216 @@
+/*
+ * Theme Name:        Gridpixels Theme
+ * Theme URI:         https://x.com/bitwizcoder
+ * Description:       Website with blog and landing page for gridpixels
+ * Version:           1.0.0
+ * Author:            Muhammad Noman
+ * Author URI:        https://x.com/bitwizcoder
+ * Tags:              one column, clasic theme
+ * Tested up to:      6.4
+ * Requires at least: 6.2
+ * Requires PHP:      7.4
+ * License:           GNU General Public License v2.0 or later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+/*
+ ###########
+ Base Styles
+ ###########
+ */
+:root {
+  --primary: #e95207;
+  --white: #fff;
+  --dark: #4d4d4d;
+}
+
+body,
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Containers */
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (max-width: 575px) {
+  .container {
+    padding: var(--wpdevs-light-padding);
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+p {
+  font-family: "PT Sans", sans-serif;
+  color: #4d4d4d;
+}
+
+h1,
+h2,
+h3,
+a {
+  font-family: "Nunito", sans-serif;
+  color: #4d4d4d;
+}
+
+/*
+ #############
+ Header Styles
+ #############
+ */
+.site-header {
+  padding: 10px 0;
+}
+
+/* Container to hold logo and nav */
+.container {
+  display: flex;
+  justify-content: space-between; /* Pushes logo to the left and nav to the right */
+  align-items: center; /* Vertically aligns logo and nav items */
+  padding: 10px;
+}
+
+.site-logo img {
+  height: 24px;
+  width: 180px; /* Keep the original aspect ratio */
+  max-width: 100%; /* Prevent the logo from getting too large */
+}
+
+.site-logo h1 {
+  font-size: 24px; /* Adjust fallback site name font size */
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between; /* Logo on the left, nav on the right */
+  align-items: center;
+}
+
+.site-logo a {
+  color: var(--white);
+}
+
+/* Navigation menu styling */
+.main-nav .nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-nav .nav-list li {
+  margin-left: 20px; /* Space between menu items */
+}
+
+.main-nav .nav-list li a {
+  color: #030303; /* White text for nav items */
+  text-decoration: none;
+}
+
+.main-nav .nav-list li a:hover {
+  color: var(--primary); /* Hover color */
+}
+
+/* Style for the CTA button */
+.main-nav .nav-list .cta-button a {
+  background-color: var(--primary); /* CTA button background color */
+  color: var(--white); /* CTA button text color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: 1px solid var(--primary);
+}
+
+.main-nav .nav-list .cta-button a:hover {
+  background-color: var(--white); /* Darker background on hover */
+  color: var(--primary); /* Change text color on hover */
+  border: 1px solid var(--primary);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start; /* Stack logo and nav vertically */
+  }
+
+  .main-nav .nav-list {
+    flex-direction: column;
+  }
+
+  .main-nav .nav-list li {
+    margin: 10px 0; /* Add space between stacked items */
+  }
+}
+
+/*
+ #############
+ Footer Styles
+ #############
+ */
+.site-footer {
+  background-color: #fafafa;
+  margin-top: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 55px 0;
+}
+
+/* Navigation menu styling */
+.footer-nav .nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-nav .nav-list li {
+  margin-left: 20px; /* Space between menu items */
+}
+
+.footer-nav .nav-list li a {
+  text-decoration: none;
+}
+
+.footer-nav .nav-list li a:hover {
+  color: var(--primary); /* Hover color */
+}
+
+.site-footer .site-logo {
+  margin-bottom: 40px;
+}
+
+.site-footer .footer-about {
+  margin-bottom: 50px;
+}
+
+.site-footer .footer-nav {
+  margin-bottom: 22px;
+}
