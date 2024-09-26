@@ -21,7 +21,7 @@
 :root {
   --primary: #e95207;
   --white: #fff;
-  --dark: #4d4d4d;
+  --dark: #212a34;
 }
 
 body,
@@ -72,7 +72,7 @@ body,
 
 p {
   font-family: "PT Sans", sans-serif;
-  color: #4d4d4d;
+  /* color: #4d4d4d; */
 }
 
 h1,
@@ -80,7 +80,11 @@ h2,
 h3,
 a {
   font-family: "Nunito", sans-serif;
-  color: #4d4d4d;
+  /* color: #4d4d4d; */
+}
+
+a {
+  color: var(--white);
 }
 
 /*
@@ -89,7 +93,7 @@ a {
  #############
  */
 .site-header {
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 /* Container to hold logo and nav */
@@ -173,6 +177,94 @@ a {
   .main-nav .nav-list li {
     margin: 10px 0; /* Add space between stacked items */
   }
+}
+
+/*
+ ################
+ Home Page Styles
+ ################
+ */
+#homepage .hero {
+  background-color: var(--dark);
+  color: var(--white);
+  text-align: center;
+  padding: 25px 0;
+}
+
+#homepage h1 {
+  padding-top: 50px;
+  padding-bottom: 18px;
+  font-size: 50px;
+}
+
+#homepage h1 span {
+  color: var(--primary);
+}
+
+#homepage .paragraph {
+  max-width: 646px;
+  margin: auto;
+  line-height: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#homepage .link {
+  padding-bottom: 64px;
+}
+
+#homepage .link a {
+  text-decoration: none;
+}
+
+#homepage .link a:hover {
+  color: var(--primary);
+}
+
+/* Project Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 1250px;
+  margin: auto;
+  margin-top: 100px;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  max-width: 378px;
+  padding: 10px;
+  background-color: rgb(248, 250, 252);
+  border-radius: 3px;
+}
+
+.cards h2 {
+  margin: 15px 0;
+}
+
+.cards p {
+  margin-bottom: 26px;
+  line-height: 1.4;
+}
+
+.cards .btn {
+  padding: 10px 15px;
+  margin-right: 30px;
+  color: var(--primary);
+  border: 1.5px solid var(--primary);
+  background-color: transparent;
+  border-radius: 5px;
+  font-family: "pt-sans";
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.cards .btn:hover {
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--primary);
 }
 
 /*
