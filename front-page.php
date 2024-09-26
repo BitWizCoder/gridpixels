@@ -20,7 +20,15 @@
 
     <div class="cards">
         <div class="card">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/image 1.jpg" alt="">
+            <div class="container">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/image 1.jpg" alt="Avatar" class="image" style="width:100%">
+                <div class="middle">
+                    <div class="text">John Doe</div>
+                </div>
+            </div>
+
+
+            <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/image 1.jpg" alt=""> -->
             <h2>Lifestyle Landing page</h2>
             <p>This is an elegant lifestyle landing page designed to inspire and engage. It combines beautiful imagery with a minimalist layout, creating a seamless browsing experience that resonates with the audience's aspirations.</p>
             <div class="buttns">
